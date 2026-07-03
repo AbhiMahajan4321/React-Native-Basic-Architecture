@@ -7,10 +7,11 @@ export const ScreenNames = {
     ForgotPassword: 'ForgotPassword',
     
     BottomTabs: 'BottomTabs',
+    AppDrawer: 'AppDrawer',
 
     Dashboard: 'Dashboard',
     Media: 'Media',
-    Viral: 'Viral',     // including search on top
+    Trending: 'Trending',     // including search on top
     Profile: 'Profile',
 
 

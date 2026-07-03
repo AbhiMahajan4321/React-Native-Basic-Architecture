@@ -2,19 +2,19 @@ import { View, Text, StyleSheet } from "react-native"
 import { useTheme } from "react-native-paper";
 
 
-const VIral = () => {
+const Trending = () => {
 
     const {colors} = useTheme()
     const styles = createStyles(colors)
 
     return (
         <View style={styles.container}>
-            <Text style={styles.color}>VIral Screen</Text>
+            <Text style={styles.color}>Trending Screen</Text>
         </View>
     )
 }
 
-export default VIral;
+export default Trending;
 
 const createStyles = (colors) => StyleSheet.create({
     container: {

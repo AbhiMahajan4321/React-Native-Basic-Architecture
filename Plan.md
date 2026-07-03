@@ -75,13 +75,18 @@ to create a project, initialize:
 npx @react-native-community/cli@latest init MyBareApp
 
 
-then,
+then,[text](package.json) [text](src)
 
 npm install @react-native/new-app-screen@0.86.0 @react-navigation/bottom-tabs@^7.18.6 @react-navigation/elements@^2.9.28 @react-navigation/native@^7.3.5 @react-navigation/native-stack@^7.17.7 react@19.2.3 react-native@0.86.0 react-native-gesture-handler@^3.0.2 react-native-paper@^5.15.3 react-native-safe-area-context@^5.5.2 react-native-screens@^4.25.2 dotenv react-native-dotenv
 
 npm install lucide-react-native
+npm install react-native-svg
 
-npm install @react-navigation/drawer@^7.7.10 react-native-worklets@0.7.4 react-native-country-codes-picker@^2.3.5 react-native-date-picker@^5.0.13 axios@^1.13.2 react-native-reanimated@4.2.1 react-redux@^9.2.0 redux-persist@^6.0.0
+*Lucide react native depends on react native svg*
+
+npm install @react-navigation/drawer@^7.7.10 react-native-worklets@0.7.4 react-native-country-codes-picker@^2.3.5 react-native-date-picker@^5.0.13 axios@^1.13.2 
+
+npm install react-native-reanimated@4.5.1 react-native-worklets@0.10.1 react-redux@^9.2.0 redux-persist@^6.0.0
 
 ------------------
 

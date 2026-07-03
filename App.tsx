@@ -8,6 +8,7 @@
 import { NewAppScreen } from '@react-native/new-app-screen';
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
 import { SafeAreaProvider, useSafeAreaInsets, } from 'react-native-safe-area-context';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import RootNavigator from './src/routes/RootNavigator';
 
 // MD3
@@ -42,12 +43,16 @@ function App() {
 
   return (
     <SafeAreaProvider>
-      <StatusBar barStyle={activeTheme ? 'light-content' : 'dark-content'} />
+      {/* <GestureHandlerRootView></GestureHandlerRootView> */}
+      {/* <GestureHandlerRootView> */}
 
-      <PaperProvider theme={activeTheme}>
-        <RootNavigator />
-      </PaperProvider>
+        <StatusBar barStyle={activeTheme ? 'light-content' : 'dark-content'} />
 
+        <PaperProvider theme={activeTheme}>
+          <RootNavigator />
+        </PaperProvider>
+
+      {/* </GestureHandlerRootView> */}
     </SafeAreaProvider>
   );
 }
