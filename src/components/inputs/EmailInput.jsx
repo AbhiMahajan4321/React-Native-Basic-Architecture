@@ -1,10 +1,5 @@
 import { StyleSheet } from "react-native"
-import { useTheme } from "react-native-paper"
-
-
-
-
-
+import { useTheme } from "react-native-paper" 
 
 
 const EmailInput = () => {
