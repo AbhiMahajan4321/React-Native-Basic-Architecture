@@ -63,3 +63,78 @@ PROFILE:
 
 
 
+******************************************
+
+
+to start a react native project, first install all these packages and then create a build, saves you some time to rebuild
+
+
+
+to create a project, initialize:
+
+npx @react-native-community/cli@latest init MyBareApp
+
+
+then,
+
+npm install @react-native/new-app-screen@0.86.0 @react-navigation/bottom-tabs@^7.18.6 @react-navigation/elements@^2.9.28 @react-navigation/native@^7.3.5 @react-navigation/native-stack@^7.17.7 react@19.2.3 react-native@0.86.0 react-native-gesture-handler@^3.0.2 react-native-paper@^5.15.3 react-native-safe-area-context@^5.5.2 react-native-screens@^4.25.2 dotenv react-native-dotenv
+
+npm install lucide-react-native
+
+npm install @react-navigation/drawer@^7.7.10 react-native-worklets@0.7.4 react-native-country-codes-picker@^2.3.5 react-native-date-picker@^5.0.13 axios@^1.13.2 react-native-reanimated@4.2.1 react-redux@^9.2.0 redux-persist@^6.0.0
+
+------------------
+
+
+after installing reanimated, add plugin in your babel.config
+
+eg:
+module.exports = {
+  presets: ['module:@react-native/babel-preset'],
+  plugins: ['react-native-reanimated/plugin'],
+};
+
+
+------------------
+
+When adding env and env.d.ts module, eg:
+
+declare module '@env' {
+	key_name: value_type (eg, string, number, etc.)
+}
+
+
+also add its plugin in babel.config as well,
+
+eg:
+
+module.exports = {
+  presets: ['module:@react-native/babel-preset'],
+  plugins: [
+    [
+      'module:react-native-dotenv',
+      {
+        moduleName: '@env',
+        path: '.env',
+        allowUndefined: true,
+      }
+    ],
+
+    'react-native-reanimated/plugin'],
+};
+
+
+*Remember: reanimated plugin should always be last*
+
+---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

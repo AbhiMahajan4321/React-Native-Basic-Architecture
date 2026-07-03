@@ -13,6 +13,7 @@ import RootNavigator from './src/routes/RootNavigator';
 // MD3
 import { MD3LightTheme, MD3DarkTheme, PaperProvider } from 'react-native-paper'
 import { md3LightColors, md3DarkColors } from './src/theme/colors'
+import { test } from '@env';
 
 
 const lightTheme = {

@@ -3,6 +3,7 @@ import { useTheme } from "react-native-paper";
 import { StackActions, useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import { ScreenNames } from "../../routes/ScreenNames";
+import { test } from "@env";
 
 const Login = () => {
     const navigation = useNavigation()
@@ -51,15 +52,13 @@ const Login = () => {
         } finally {
             setLoginLoading(false)
         }
-
-
     }
 
     return (
         <View style={styles.container}>
 
             <View style={styles.card}>
-                <Text style={styles.header}>Login Screen</Text>
+                <Text style={styles.header}>Login Screen {test}</Text>
 
                 <TextInput
                     style={styles.input}
