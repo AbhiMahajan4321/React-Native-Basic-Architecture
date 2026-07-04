@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { View, Text, StyleSheet } from "react-native"
-import { ScreenNames } from "../../routes/ScreenNames";
+import { ScreenNames } from "../../navigation/ScreenNames";
 
 import { useNavigation } from "@react-navigation/native";
 import { useTheme } from "react-native-paper";

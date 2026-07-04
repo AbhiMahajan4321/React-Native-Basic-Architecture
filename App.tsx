@@ -5,11 +5,11 @@
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+// import { NewAppScreen } from '@react-native/new-app-screen';
+import { StatusBar, StyleSheet, useColorScheme } from 'react-native';
 import { SafeAreaProvider, useSafeAreaInsets, } from 'react-native-safe-area-context';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import RootNavigator from './src/routes/RootNavigator';
+// import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import RootNavigator from './src/navigation/RootNavigator';
 
 // MD3
 import { MD3LightTheme, MD3DarkTheme, PaperProvider } from 'react-native-paper'
